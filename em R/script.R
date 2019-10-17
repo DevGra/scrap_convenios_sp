@@ -1,9 +1,5 @@
 getwd()
-setwd('C:\\Users\\cgt\\Desktop\\scrap_convenio')
-
-arq  <- read.csv('teste_grav.csv')
-rm(arq)
-
+#setwd('C:\\Users\\cgt\\Desktop\\scrap_convenio')
 
 arq2 <- read.csv('teste_grav.csv')
 typeof(arq2)
@@ -13,7 +9,7 @@ str(df_arq2)
 # library(xlsx)
 # write.xlsx(df_arq2, "C:\\Users\\cgt\\Desktop\\scrap_convenio\\")
 
-write.csv(arq2, file = "C:\\Users\\cgt\\Desktop\\scrap_convenio\\OSR2500_plan.csv", row.names = FALSE)
+write.csv(arq2, file = "OSR2500_plan.csv", row.names = FALSE)
 ?write.csv
 
 main <- read.csv("OR25000.csv")
@@ -23,6 +19,6 @@ library(XML)
 
 doc.html <- htmlTreeParse('savedrecs.html', useInternal = TRUE)
 
-rawHTML <- paste(readLines("savedrecs.html"), collapse="\n")
+rawHTML <- paste(readLines("savedrecs.html"), collapse = "\n")
 
 
