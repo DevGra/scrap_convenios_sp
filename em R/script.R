@@ -10,7 +10,7 @@ str(df_arq2)
 # write.xlsx(df_arq2, "C:\\Users\\cgt\\Desktop\\scrap_convenio\\")
 
 write.csv(arq2, file = "OSR2500_plan.csv", row.names = FALSE)
-?write.csv
+
 
 main <- read.csv("OR25000.csv")
 rm(main)
